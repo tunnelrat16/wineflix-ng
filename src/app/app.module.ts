@@ -20,6 +20,7 @@ import { AmountConsumedComponent } from './amount-consumed/amount-consumed.compo
 import { DrinkingWineComponent } from './drinking-wine/drinking-wine.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { WineImageComponent } from './wine-image/wine-image.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MainComponent } from './main/main.component';
     AmountConsumedComponent,
     DrinkingWineComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    WineImageComponent
   ],
   imports: [
     BrowserModule,

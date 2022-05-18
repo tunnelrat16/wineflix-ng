@@ -50,7 +50,8 @@
 .category ul {
     display: flex;
     flex-flow: row nowrap;
-    overflow-x: auto
+    overflow-x: auto;
+    list-style: none
 }
 
 .hero-image {

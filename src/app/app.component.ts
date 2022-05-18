@@ -12,5 +12,6 @@ export class AppComponent {
   heroContent = heroContent
   faPlay = faPlay
   faInfoCircle = faInfoCircle
-  title = 'angular-template';
+  title = 'angular-template'
+
 }

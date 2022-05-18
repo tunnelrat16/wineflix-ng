@@ -1,7 +1,9 @@
 <h2>Keep Drinking</h2>
 <ul>
-    <li *ngFor="let wine of wines">
-        <img src="{{wine.imageUrl}}" alt="{{wine.label}}" />
-        <app-wine-listing [isFinished]="false"></app-wine-listing>
+    <li *ngFor="let unfinishedWine of unfinishedWines">
+        <div class="wine">
+            <img src="{{unfinishedWine.imageUrl}}" alt="{{unfinishedWine.label}}" />
+            <app-wine-listing [isFinished]="false"></app-wine-listing>
+        </div>
     </li>
 </ul>

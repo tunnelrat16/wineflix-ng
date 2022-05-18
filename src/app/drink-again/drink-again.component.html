@@ -1,8 +1,10 @@
 <h2>Drink Again</h2>
 <ul>
-    <li *ngFor="let wine of wines">
-        <img src="{{wine.imageUrl}}" alt="{{wine.label}}" />
-        <app-new-badge *ngIf="wine.isNew"></app-new-badge>
-        <app-wine-listing [isFinished]="true"></app-wine-listing>
+    <li *ngFor="let finishedWine of finishedWines">
+        <div class="wine">
+            <img src="{{finishedWine.imageUrl}}" alt="{{finishedWine.label}}" />
+            <app-new-badge *ngIf="finishedWine.isNew"></app-new-badge>
+            <app-wine-listing [isFinished]="true"></app-wine-listing>
+        </div>
     </li>
 </ul>

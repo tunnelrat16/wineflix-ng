@@ -6,7 +6,7 @@ type Wine = {
   imageUrl: string;
   isNew?: boolean;
   label: string;
-  inFinished?: boolean;
+  isFinished?: boolean;
   progress?: number;
 }
 
@@ -17,6 +17,6 @@ type Wine = {
 })
 export class KeepDrinkingComponent {
   wines: Wine[] = wines;
-
-
+  finishedWines = wines.filter((wine) => wine.isFinished);
+  unfinishedWines = wines.filter((wine) => !wine.isFinished);;
 }
