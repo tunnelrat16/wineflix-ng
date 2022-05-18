@@ -1,24 +1,15 @@
-import { Component, Input} from '@angular/core';
-import { wines } from "../data";
-
-type Wine = {
-  id: number;
-  imageUrl: string;
-  isNew?: boolean;
-  label: string;
-  inFinished?: boolean;
-  progress?: number;
-}
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-wine-image',
   templateUrl: './wine-image.component.html',
   styleUrls: ['./wine-image.component.css']
 })
-export class WineImageComponent {
-  wines: Wine[] = wines;
-  @Input() isFinished = "false"
+export class WineImageComponent implements OnInit {
 
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 
 }
