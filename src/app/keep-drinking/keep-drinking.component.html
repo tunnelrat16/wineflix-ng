@@ -1,27 +1,7 @@
 <h2>Keep Drinking</h2>
 <ul>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
-    </li>
-    <li>
-        <app-drinking-wine></app-drinking-wine>
+    <li *ngFor="let wine of wines">
+        <img src="{{wine.imageUrl}}" alt="{{wine.label}}" />
+        <app-wine-listing [isFinished]="false"></app-wine-listing>
     </li>
 </ul>

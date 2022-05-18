@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
+import { heroContent } from "../data";
+
+type HeroContent = {
+  title: string;
+  subtitle: string;
+  imageUrl: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-hero-content',
@@ -6,5 +14,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-content.component.css']
 })
 export class HeroContentComponent {
+
+  heroContent: HeroContent = heroContent;
 
 }
